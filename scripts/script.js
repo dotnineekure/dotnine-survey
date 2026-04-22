@@ -1,3 +1,3 @@
 function startSurvey() {
-   open(surveys.html);
+    window.location.href = "survey.html";
 }
