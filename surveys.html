@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dotnine Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Dotnine Logo">
+        <h1>Dotnine Survey</h1>
+    </div>
+</header>
+
+<section class="hero">
+    <h2>Quick Survey</h2>
+    <p>Answer all questions to earn 10 points.</p>
+</section>
+
+<section class="features">
+    <form id="surveyForm" style="background:white; padding:30px; border-radius:15px; width:100%; max-width:600px; color:#111;">
+        
+        <h3>1. How often do you use the internet?</h3>
+        <label><input type="radio" name="q1" value="Daily" required> Daily</label><br>
+        <label><input type="radio" name="q1" value="Weekly"> Weekly</label><br>
+        <label><input type="radio" name="q1" value="Rarely"> Rarely</label>
+
+        <br><br>
+
+        <h3>2. Which device do you use most?</h3>
+        <label><input type="radio" name="q2" value="Phone" required> Phone</label><br>
+        <label><input type="radio" name="q2" value="Laptop"> Laptop</label><br>
+        <label><input type="radio" name="q2" value="Tablet"> Tablet</label>
+
+        <br><br>
+
+        <h3>3. Would you recommend Dotnine Survey?</h3>
+        <label><input type="radio" name="q3" value="Yes" required> Yes</label><br>
+        <label><input type="radio" name="q3" value="Maybe"> Maybe</label><br>
+        <label><input type="radio" name="q3" value="No"> No</label>
+
+        <br><br>
+
+        <button type="submit" style="padding:10px 20px; border:none; border-radius:20px; background:#2563eb; color:white; cursor:pointer;">
+            Submit Survey
+        </button>
+
+        <p id="result" style="margin-top:20px; font-weight:bold;"></p>
+
+    </form>
+</section>
+
+<script>
+document.getElementById("surveyForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    document.getElementById("result").innerHTML = "✅ Survey submitted successfully! You earned 10 points.";
+});
+</script>
+
+</body>
+</html>
