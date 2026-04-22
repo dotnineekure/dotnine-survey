@@ -1,3 +1,3 @@
 function startSurvey() {
-    alert("Survey feature coming soon! 🚀");
+   open(surveys.html);
 }
